@@ -32,19 +32,19 @@ function fetchWeather() {
             document.getElementById("temperature").textContent = data.main.temp + "°C";
             document.getElementById("weatherDescription").textContent = data.weather[0].description;
             if(data.weather[0].description == 'clear sky'){
-                image.src = "pics/clear.gif";
+                image.src = "clear.gif";
             }
             else if(data.weather[0].description == 'scattered clouds'){
-                image.src = "pics/clouds.gif"
+                image.src = "clouds.gif"
             }
             else if(data.weather[0].description == 'broken clouds'){
-                image.src = "pics/clouds.gif"
+                image.src = "clouds.gif"
             }
             else if(data.weather[0].description == 'light rain'){
-                image.src = "pics/cat.gif"
+                image.src = "cat.gif"
             }
             else if(data.weather[0].description == 'overcast clouds'){
-                image.src = "pics/clouds.gif"
+                image.src = "clouds.gif"
             }
             document.getElementById("humidity").textContent = data.main.humidity + "%";
             document.getElementById("wind").textContent = data.wind.speed + " m/s";
