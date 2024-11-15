@@ -13,7 +13,7 @@ function closeAlert() {
 
 // Function to fetch weather data using the OpenWeatherMap API
 function fetchWeather() {
-    var apiKey = 'a1cbe27a90d169fa3952e3f02732a49a';
+    var apiKey = '';
     var city = document.getElementById("cityInput").value;
     const image = document.getElementById("weather_Image");
     
